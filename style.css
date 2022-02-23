@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+
+/* Variables */
+:root {
+    --main-color: #0f5e08;
+    --serif-font: 'Bree Serif', serif; 
+    --sans-serif-font: 'lato', sans-serif;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    flex: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: var(--serif-font);
+}
+
+/* Nav Styles */
+nav.brand {
+    height: 2rem;
+}
+
+nav {
+    padding: 0.5rem;
+    background: #fafaf9;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    font-family: var(--sans-serif-font);
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #585959;
+}
+
+/* Hero Styles */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('images/zebra-hero.jpg') top;
+    padding: 2rem;
+}
+
+#hero img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+#hero h1 {
+    padding: 0.5rem;
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    font-weight: normal;
+    color: white;
+}
+
+.button {
+    font-family: var(sans-serif);
+    font-size: 1.2rem;
+    border: 1px solid white;   
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+.column img {
+    width: 75%;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.column h3 {
+    padding: 1rem 0;
+    font-family: var(--serif-font);
+    color: var(--main-color);
+    font-weight: normal;
+    font-size: 1rem;
+
+}
+
+.column a {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    margin-top: 0.5rem;
+
+}
+.column p {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Social Link Styles */
+#social-links {
+    background: var(--main-color);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+#social-links img{
+    padding-inline: 3em;
+}
+
+#social-links p {
+    flex: 100%;
+    text-align: center;
+    color: white;
+    font-family: var(--serif-font);
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font: 1em var(--sans-serif-font);
+}
